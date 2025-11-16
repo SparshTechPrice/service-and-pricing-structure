@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Web Development Services</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font for consistent rendering across devices -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Define custom colors and font stack */
+        :root {
+            --primary-color: #a78bfa; /* Purple 400 */
+            --secondary-color: #6366f1; /* Indigo 500 */
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Make sure small tables wrap and stay readable on narrow screens */
+        table { border-collapse: collapse; }
+        td, th { word-break: break-word; }
+        .responsive-table { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+        /* Increase tappable area on mobile for card actions or links (if added later) */
+        .touch-target { padding: .75rem; }
+
+        /* Slightly increase heading sizes on larger screens for better hierarchy */
+        @media (min-width: 1024px) {
+            h1 { font-size: 2.6rem; }
+        }
+        /* Custom gradient border for premium sections */
+        .gradient-border-purple {
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-image-slice: 1;
+        }
+        /* Custom text gradient for emphasis */
+        .text-gradient-purple {
+            background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            background-clip: text; /* standard property for broader compatibility */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- Custom Glow & Enhanced Hover Effects (User Requested) --- */
+        
+        /* Permanent, subtle base glow for all boxes */
+        .glow-base {
+            /* Faint purple/indigo glow for depth */
+            box-shadow: 0 0 15px rgba(167, 139, 250, 0.1), 0 0 30px rgba(99, 102, 241, 0.05);
+        }
+
+        /* Enhanced glow and lift effect on hover (for all boxes) */
+        .glow-hover:hover {
+            /* Brighter purple/indigo glow with deeper overall shadow */
+            box-shadow: 0 0 25px rgba(167, 139, 250, 0.6), 0 0 50px rgba(99, 102, 241, 0.4), 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Smoother and longer transition for a more dramatic effect */
+        .transition-dramatic {
+            transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12 sm:mb-16">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
+                Premium Web Solutions & <span class="text-purple-400">16-Month Support</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
+                Clean, high-performance web development backed by over a year of dedicated maintenance and security patching.
+            </p>
+        </header>
+
+        <!-- Technical Stack Details from the Image (Glow Added) -->
+        <h2 class="text-3xl font-semibold text-center text-purple-400 mb-8 sm:mb-10">Website Type vs Tech Stack</h2>
+        <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-lg mb-12 sm:mb-16 gradient-border-purple glow-base">
+            <div class="responsive-table">
+                <table class="w-full text-left table-auto min-w-[640px] sm:min-w-full">
+                    <thead>
+                        <tr class="border-b border-gray-700 text-gray-300">
+                            <th class="py-3 px-4 text-sm font-semibold">Website Type</th>
+                            <th class="py-3 px-4 text-sm font-semibold">Languages / Tech Stack Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition-colors duration-200">
+                            <td class="py-3 px-4 text-sm text-gray-300">Basic Landing Page (Without Animation)</td>
+                            <td class="py-3 px-4 text-sm text-gray-400">HTML, CSS, Tailwind CSS, JavaScript, React.js / Next.js</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition-colors duration-200">
+                            <td class="py-3 px-4 text-sm text-gray-300">Advanced Landing Page (With Animation)</td>
+                            <td class="py-3 px-4 text-sm text-gray-400">HTML, CSS, Tailwind CSS, JavaScript, React.js / Next.js, **GSAP**, **Framer Motion**, Locomotive Scroll, Smooth Scroll</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition-colors duration-200">
+                            <td class="py-3 px-4 text-sm text-gray-300">Full Website (3–5 Pages)</td>
+                            <td class="py-3 px-4 text-sm text-gray-400">HTML, CSS, Tailwind CSS, JavaScript, React.js / Next.js, Node.js + Express.js (optional), MongoDB (optional)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800/50 transition-colors duration-200">
+                            <td class="py-3 px-4 text-sm text-gray-300">E-Commerce Website (With Admin Panel)</td>
+                            <td class="py-3 px-4 text-sm text-gray-400">React.js, Next.js, Tailwind CSS, Node.js + Express.js, Mongo DB, Razorpay/Stripe API</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Development Services (Pricing Cards) Section -->
+        <h2 class="text-3xl font-semibold text-center text-purple-400 mb-8 sm:mb-10">Development Packages & Pricing</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Card 1: Basic Landing Page (Glow and Dramatic Hover) -->
+            <div class="bg-gray-900 p-5 sm:p-6 rounded-xl shadow-2xl transition-dramatic glow-base glow-hover hover:scale-[1.03] hover:-translate-y-1 relative overflow-hidden group touch-target">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-800/20 to-indigo-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <h3 class="text-xl font-bold text-purple-400 mb-3 relative z-10">1. Basic Landing Page</h3>
+                <p class="text-3xl font-extrabold text-white mb-4 relative z-10">₹7,000 – ₹10,000</p>
+                <p class="text-sm text-gray-400 mb-4 relative z-10">Time: <span class="font-medium text-gray-200">5 – 7 Days</span></p>
+                
+                <p class="text-xs font-semibold text-purple-300 mb-2 relative z-10">Tech Stack Includes:</p>
+                <p class="text-xs text-gray-400 mb-4 relative z-10 border-b border-gray-800 pb-2">HTML, CSS, Tailwind CSS, JavaScript, React.js / Next.js</p>
+
+                <ul class="space-y-2 text-sm text-gray-300 list-inside relative z-10">
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Clean, modern UI, Tailwind-based.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Fast loading and fully responsive.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Revisions: 2 Major + 2 Minor</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Redesign: 1 Full Redesign Allowed</li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Advanced Landing Page (Highlighted, Glow and Dramatic Hover) -->
+            <div class="bg-gray-900 p-5 sm:p-6 rounded-xl shadow-2xl transition-dramatic glow-base glow-hover hover:scale-[1.03] hover:-translate-y-1 relative overflow-hidden group border-2 border-purple-600 touch-target">
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-800/30 to-purple-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <h3 class="text-xl font-bold text-purple-400 mb-3 relative z-10">2. Advanced Landing Page <span class="text-xs text-indigo-300 ml-2">(Recommended)</span></h3>
+                <p class="text-3xl font-extrabold text-white mb-4 relative z-10">₹15,000 – ₹25,000</p>
+                <p class="text-sm text-gray-400 mb-4 relative z-10">Time: <span class="font-medium text-gray-200">8 – 12 Days</span></p>
+                
+                <p class="text-xs font-semibold text-purple-300 mb-2 relative z-10">Tech Stack Includes:</p>
+                <p class="text-xs text-gray-400 mb-4 relative z-10 border-b border-gray-800 pb-2">...plus **GSAP**, **Framer Motion**, and advanced scroll effects.</p>
+
+                <ul class="space-y-2 text-sm text-gray-300 list-inside relative z-10">
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Premium <strong class="text-indigo-300">GSAP/Framer Motion</strong> animations.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Smooth scroll and micro-interactions (SaaS quality).</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Revisions: 3 Major + 2 Minor</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Redesign: 1 Full Redesign Allowed</li>
+                </ul>
+            </div>
+            
+            <!-- Card 3: Full Website (3–5 Pages) (Glow and Dramatic Hover) -->
+            <div class="bg-gray-900 p-5 sm:p-6 rounded-xl shadow-2xl transition-dramatic glow-base glow-hover hover:scale-[1.03] hover:-translate-y-1 relative overflow-hidden group touch-target">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-800/20 to-indigo-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <h3 class="text-xl font-bold text-purple-400 mb-3 relative z-10">3. Full Website (3–5 Pages)</h3>
+                <p class="text-3xl font-extrabold text-white mb-4 relative z-10">₹25,000 – ₹45,000</p>
+                <p class="text-sm text-gray-400 mb-4 relative z-10">Time: <span class="font-medium text-gray-200">3 – 4 Weeks</span></p>
+                
+                <p class="text-xs font-semibold text-purple-300 mb-2 relative z-10">Tech Stack Includes:</p>
+                <p class="text-xs text-gray-400 mb-4 relative z-10 border-b border-gray-800 pb-2">React.js / Next.js with optional Node.js (Express.js) & MongoDB.</p>
+
+                <ul class="space-y-2 text-sm text-gray-300 list-inside relative z-10">
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>High-end corporate look & professional UI/UX.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Built SEO-ready and fully responsive.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Revisions: 3 Full Revision Rounds</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Redesign: Up to 2 Full Redesigns (Before Dev)</li>
+                </ul>
+            </div>
+
+            <!-- Card 4: E-Commerce Website (Glow and Dramatic Hover) -->
+            <div class="bg-gray-900 p-5 sm:p-6 rounded-xl shadow-2xl transition-dramatic glow-base glow-hover hover:scale-[1.03] hover:-translate-y-1 relative overflow-hidden group touch-target">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-800/20 to-indigo-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <h3 class="text-xl font-bold text-purple-400 mb-3 relative z-10">4. E-Commerce Website</h3>
+                <p class="text-3xl font-extrabold text-white mb-4 relative z-10">₹50,000 – ₹1,20,000</p>
+                <p class="text-sm text-gray-400 mb-4 relative z-10">Time: <span class="font-medium text-gray-200">4 – 8 Weeks (Up to 12)</span></p>
+                
+                <p class="text-xs font-semibold text-purple-300 mb-2 relative z-10">Tech Stack Includes:</p>
+                <p class="text-xs text-gray-400 mb-4 relative z-10 border-b border-gray-800 pb-2">Full stack: React.js, Next.js, Node.js + Express.js, MongoDB, Razorpay/Stripe.</p>
+
+                <ul class="space-y-2 text-sm text-gray-300 list-inside relative z-10">
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Modern E-Commerce UI & secure payment gateway.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Full admin panel and product management features.</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Revisions: 3 Full Revision Rounds</li>
+                    <li class="flex items-start"><svg class="w-5 h-5 mr-2 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Redesign: 1 Full Redesign Allowed (Before Dev)</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="my-16 border-t border-gray-800"></div>
+
+        <!-- 16-Month Support Section (Outer Container Glow Added) -->
+        <h2 class="text-3xl font-semibold text-center text-white mb-8 sm:mb-12">
+            The <span class="text-gradient-purple font-extrabold">16-Month</span> Maintenance Guarantee <span class="text-gray-400">(Zero Extra Cost)</span>
+        </h2>
+
+        <div class="bg-gray-900 p-6 sm:p-8 rounded-xl shadow-2xl gradient-border-purple glow-base">
+            <p class="text-lg text-gray-300 text-center mb-10 max-w-4xl mx-auto">
+                Our support model ensures your website runs perfectly, remains secure, and stays compatible with all modern technology for over a year.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                
+                <!-- Support Item 1 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L19.5 7.25M17 19.5L7.25 9.75"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                    <h4 class="font-bold text-white mb-1">Core Bug Fixing & Resolution</h4>
+                    <p class="text-sm text-gray-400">Fixing any unexpected errors, crashes, or faulty functionality immediately (e.g., 'Add to Cart' not working).</p>
+                </div>
+
+                <!-- Support Item 2 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4m-4 4l-4 4m-6-10h4"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Code & Server Error Management</h4>
+                    <p class="text-sm text-gray-400">Repairing code glitches, compatibility issues, and resolving critical issues like '500 Server Error'.</p>
+                </div>
+
+                <!-- Support Item 3 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 009-9h-1"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M3 6h18M3 18h18"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Hosting & Server Coordination</h4>
+                    <p class="text-sm text-gray-400">Directly liaising with your hosting provider to troubleshoot and restore services in case of downtime or outages.</p>
+                </div>
+
+                <!-- Support Item 4 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Proactive Security Patches</h4>
+                    <p class="text-sm text-gray-400">Implementing security updates, patching vulnerabilities, and setting firewall rules to protect against malware/hackers.</p>
+                </div>
+                
+                <!-- Support Item 5 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 3-3M3 21h18M3 3h18"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Minor UI & Visual Consistency</h4>
+                    <p class="text-sm text-gray-400">Quick fixes for small design issues: adjusting spacing, alignment, font rendering, or color discrepancies.</p>
+                </div>
+
+                <!-- Support Item 6 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Cross-Browser/Device Compatibility</h4>
+                    <p class="text-sm text-gray-400">Ensuring the site renders perfectly and functions on all major browsers (Chrome, Safari, Firefox) and mobile devices.</p>
+                </div>
+
+                <!-- Support Item 7 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Contact Form Reliability</h4>
+                    <p class="text-sm text-gray-400">Troubleshooting and fixing issues where contact forms fail to submit data or send notification emails (SMTP setup/checks).</p>
+                </div>
+
+                <!-- Support Item 8 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4m-4 4l-4 4m-6-10h4"></path></svg>
+                    <h4 class="font-bold text-white mb-1">New Browser Feature Updates</h4>
+                    <p class="text-sm text-gray-400">Adjusting code to resolve rendering or functionality issues caused by new browser (Chrome, Edge, Safari) updates.</p>
+                </div>
+
+                <!-- Support Item 9 (Glow and Dramatic Hover) -->
+                <div class="flex flex-col items-center text-center p-4 bg-gray-950 rounded-lg shadow-inner transition-dramatic glow-base glow-hover hover:bg-gray-800/50 hover:scale-[1.05] hover:-translate-y-1">
+                    <svg class="w-8 h-8 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    <h4 class="font-bold text-white mb-1">Complimentary Content Edits</h4>
+                    <p class="text-sm text-gray-400">Making small textual or image changes requested by the client during the support period (e.g., updating a heading or phone number).</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
